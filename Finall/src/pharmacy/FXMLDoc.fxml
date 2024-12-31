@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pharmacy.FXMLCon">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutY="1.0" prefHeight="500.0" prefWidth="250.0" styleClass="left-form" stylesheets="@Login.css">
+               <children>
+                  <Label layoutX="38.0" layoutY="279.0" text="Pharmacy Mangement" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="93.0" layoutY="314.0" text="System" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="56.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cup.png" />
+                     </image>
+                  </ImageView>
+                  
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="250.0" layoutY="1.0" prefHeight="500.0" prefWidth="450.0" styleClass="right-form" stylesheets="@Login.css">
+               <children>
+                  <TextField fx:id="username" layoutX="136.0" layoutY="258.0" onAction="#loginAdmin" prefHeight="32.0" prefWidth="205.0" promptText="Username" styleClass="textfield" stylesheets="@Login.css" />
+                  <PasswordField fx:id="password" layoutX="136.0" layoutY="303.0" onAction="#loginAdmin" prefHeight="32.0" prefWidth="205.0" promptText="Password" styleClass="textfield" stylesheets="@Login.css" />
+                  <Button fx:id="loginBtn" layoutX="197.0" layoutY="357.0" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="32.0" prefWidth="83.0" styleClass="nav-btn" stylesheets="@Login.css" text="Login" />
+                  <Label layoutX="201.0" layoutY="215.0" text="Welcome!">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="close" layoutX="424.0" layoutY="-1.0" mnemonicParsing="false" onAction="#close" prefHeight="29.0" prefWidth="27.0" styleClass="nav-btnclose" stylesheets="@Login.css" text="X" />
+                  <ImageView fitHeight="119.0" fitWidth="114.0" layoutX="182.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@user_md.png" />
+                     </image>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </ImageView>
+                  <Button fx:id="Login_Signup" layoutX="133.0" layoutY="412.0" mnemonicParsing="false" onAction="#loginSIGNUP" styleClass="nav-btnclose" text="No Account? Click to Sign Up">
+                     <stylesheets>
+                        <URL value="@Dashboard.css" />
+                        <URL value="@Login.css" />
+                     </stylesheets>
+                  </Button>
+                
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

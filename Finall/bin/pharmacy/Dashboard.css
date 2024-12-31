@@ -1,0 +1,28 @@
+
+.nav-form{
+    -fx-background-color:linear-gradient(to bottom right, #4cbb17 , #203354);
+}
+
+.nav-btn{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-font-size:14px;
+    -fx-font-family:"Berliner Sans FB";
+    -fx-text-fill:#fff;
+    -fx-alignment: CENTER-LEFT;
+    
+}
+
+.nav-btnclose{
+    -fx-background-color:transparent;
+    -fx-font-size:14px;
+    -fx-text-fill:#000;
+}
+
+.btn{
+    -fx-background-color:linear-gradient(to bottom right,  #4cbb17,#203354);
+    -fx-cursor:hand;
+    -fx-font-size:14px;
+    -fx-font-family:"Tahoma";
+    -fx-text-fill:#fff;
+}

@@ -1,0 +1,35 @@
+.left-form{
+    -fx-background-color:linear-gradient(to bottom right,  #4cbb17,#203354);
+    -fx-border-color:#000;
+    -fx-border-width:.4px 0px .4px .4px;
+}
+
+.right-form{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width:.4px .4px .4px 0px;
+}
+
+
+.nav-btnclose{
+    -fx-background-color:transparent;
+    -fx-font-size:14px;
+    -fx-text-fill:#000; 
+    -fx-cursor:hand; 
+}
+
+.nav-btncloseSignup{
+    -fx-background-color:transparent;
+    -fx-font-size:14px;
+    -fx-text-fill:#fff;  
+    
+}
+.nav-btn{
+    -fx-background-color:linear-gradient(to bottom right,  #4cbb17,#203354);
+    -fx-cursor:hand;
+    -fx-font-size:14px;
+    -fx-font-family:"Tahoma";
+    -fx-text-fill:#fff;
+}
+
+
